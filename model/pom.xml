@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.nasdanika.models.bw5</groupId>
-        <version>2026.6.0</version>
+        <version>2026.8.0</version>
         <artifactId>parent</artifactId>
         <relativePath>..</relativePath>
     </parent>
     <artifactId>model</artifactId>
     <packaging>jar</packaging>
-    <name>Ecore BW 5.x Model</name>
+    <name>Ecore Bw5 Model</name>
 
     <build>
         <plugins>
@@ -77,9 +77,14 @@
     </build>
     <dependencies>
         <dependency>
+            <groupId>org.nasdanika.models.threat</groupId>
+            <artifactId>model</artifactId>
+            <version>2026.8.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.nasdanika.core</groupId>
             <artifactId>graph</artifactId>
-            <version>${core.version}</version>
+            <version>2026.6.0</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.emf</groupId>

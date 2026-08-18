@@ -17,6 +17,8 @@ import org.nasdanika.models.bw5.Bw5Package;
 import org.nasdanika.models.bw5.Node;
 import org.nasdanika.models.bw5.Transition;
 
+import org.nasdanika.models.nxcore.impl.NamedElementImpl;
+
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Node</b></em>'.

@@ -2,8 +2,6 @@
  */
 package org.nasdanika.models.bw5.impl;
 
-import java.util.Map;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -58,7 +56,6 @@ public class Bw5FactoryImpl extends EFactoryImpl implements Bw5Factory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case Bw5Package.STRING_TO_STRING_ENTRY: return (EObject)createStringToStringEntry();
 			case Bw5Package.PROCESS_DEFINITION: return createProcessDefinition();
 			case Bw5Package.NODE: return createNode();
 			case Bw5Package.TYPED_ELEMENT: return createTypedElement();
@@ -76,16 +73,6 @@ public class Bw5FactoryImpl extends EFactoryImpl implements Bw5Factory {
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Map.Entry<String, String> createStringToStringEntry() {
-		StringToStringEntryImpl stringToStringEntry = new StringToStringEntryImpl();
-		return stringToStringEntry;
 	}
 
 	/**

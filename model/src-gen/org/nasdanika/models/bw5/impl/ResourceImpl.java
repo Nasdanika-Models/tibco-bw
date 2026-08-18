@@ -11,6 +11,8 @@ import org.nasdanika.models.bw5.Bw5Package;
 import org.nasdanika.models.bw5.Folder;
 import org.nasdanika.models.bw5.Resource;
 
+import org.nasdanika.models.nxcore.impl.NamedElementImpl;
+
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Resource</b></em>'.

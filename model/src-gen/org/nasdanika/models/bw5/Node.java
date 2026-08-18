@@ -4,6 +4,8 @@ package org.nasdanika.models.bw5;
 
 import org.eclipse.emf.common.util.EList;
 
+import org.nasdanika.models.nxcore.NamedElement;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Node</b></em>'.

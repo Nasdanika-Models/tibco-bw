@@ -15,7 +15,7 @@ import org.nasdanika.models.bw5.Bw5Factory;
 import org.nasdanika.models.bw5.Container;
 import org.nasdanika.models.bw5.Group;
 import org.nasdanika.models.bw5.Label;
-import org.nasdanika.models.bw5.NamedElement;
+import org.nasdanika.models.nxcore.NamedElement;
 import org.nasdanika.models.bw5.NamespaceAware;
 import org.nasdanika.models.bw5.Node;
 import org.nasdanika.models.bw5.ProcessDefinition;
@@ -211,7 +211,7 @@ public class Bw5ProcessLoader {
 					namedElement.setName(reader.getElementText());
 					break;
 				case "description":
-					namedElement.setDescription(reader.getElementText());
+					namedElement.setDocumentation(reader.getElementText());
 					break;
 				default:
 					skipElement(reader);

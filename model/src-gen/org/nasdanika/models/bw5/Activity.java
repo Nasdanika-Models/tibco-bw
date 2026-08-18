@@ -90,7 +90,7 @@ public interface Activity extends TypedNode, Caller, NamespaceAware {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Input Bindings Namespaces</em>' map.
 	 * @see org.nasdanika.models.bw5.Bw5Package#getActivity_InputBindingsNamespaces()
-	 * @model mapType="org.nasdanika.models.bw5.StringToStringEntry&lt;org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString&gt;"
+	 * @model mapType="org.nasdanika.models.nxcore.StringToStringMapEntry&lt;org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString&gt;"
 	 * @generated
 	 */
 	EMap<String, String> getInputBindingsNamespaces();

@@ -22,6 +22,8 @@ import org.nasdanika.models.bw5.NamespaceAware;
 import org.nasdanika.models.bw5.Node;
 import org.nasdanika.models.bw5.Transition;
 
+import org.nasdanika.models.nxcore.impl.NamedElementImpl;
+
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Container</b></em>'.

@@ -168,7 +168,7 @@ public interface ProcessDefinition extends Container, CallTarget, Resource {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Process Variables</em>' containment reference list.
 	 * @see org.nasdanika.models.bw5.Bw5Package#getProcessDefinition_ProcessVariables()
-	 * @model containment="true" keys="name"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<ProcessVariable> getProcessVariables();

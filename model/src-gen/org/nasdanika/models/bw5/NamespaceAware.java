@@ -31,7 +31,7 @@ public interface NamespaceAware extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Namespaces</em>' map.
 	 * @see org.nasdanika.models.bw5.Bw5Package#getNamespaceAware_Namespaces()
-	 * @model mapType="org.nasdanika.models.bw5.StringToStringEntry&lt;org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString&gt;"
+	 * @model mapType="org.nasdanika.models.nxcore.StringToStringMapEntry&lt;org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString&gt;"
 	 * @generated
 	 */
 	EMap<String, String> getNamespaces();

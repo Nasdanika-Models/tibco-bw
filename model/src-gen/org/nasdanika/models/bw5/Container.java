@@ -5,6 +5,8 @@ package org.nasdanika.models.bw5;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.EMap;
 
+import org.nasdanika.models.nxcore.NamedElement;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Container</b></em>'.
@@ -39,7 +41,7 @@ public interface Container extends NamedElement, NamespaceAware {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Activities</em>' containment reference list.
 	 * @see org.nasdanika.models.bw5.Bw5Package#getContainer_Activities()
-	 * @model containment="true" keys="name"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Activity> getActivities();
@@ -55,7 +57,7 @@ public interface Container extends NamedElement, NamespaceAware {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Groups</em>' containment reference list.
 	 * @see org.nasdanika.models.bw5.Bw5Package#getContainer_Groups()
-	 * @model containment="true" keys="name"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Group> getGroups();
@@ -164,7 +166,7 @@ public interface Container extends NamedElement, NamespaceAware {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Return Bindings Namespaces</em>' map.
 	 * @see org.nasdanika.models.bw5.Bw5Package#getContainer_ReturnBindingsNamespaces()
-	 * @model mapType="org.nasdanika.models.bw5.StringToStringEntry&lt;org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString&gt;"
+	 * @model mapType="org.nasdanika.models.nxcore.StringToStringMapEntry&lt;org.eclipse.emf.ecore.EString, org.eclipse.emf.ecore.EString&gt;"
 	 * @generated
 	 */
 	EMap<String, String> getReturnBindingsNamespaces();

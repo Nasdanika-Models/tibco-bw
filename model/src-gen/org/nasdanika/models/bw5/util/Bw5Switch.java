@@ -2,14 +2,19 @@
  */
 package org.nasdanika.models.bw5.util;
 
-import java.util.Map;
-
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
 import org.nasdanika.models.bw5.*;
+
+import org.nasdanika.models.nxcore.Documented;
+import org.nasdanika.models.nxcore.Marked;
+import org.nasdanika.models.nxcore.ModelElement;
+import org.nasdanika.models.nxcore.NamedElement;
+import org.nasdanika.models.nxcore.Referrable;
+import org.nasdanika.models.nxcore.StringIdentity;
 
 /**
  * <!-- begin-user-doc -->
@@ -68,23 +73,16 @@ public class Bw5Switch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case Bw5Package.NAMED_ELEMENT: {
-				NamedElement namedElement = (NamedElement)theEObject;
-				T result = caseNamedElement(namedElement);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case Bw5Package.CONTAINER: {
 				Container container = (Container)theEObject;
 				T result = caseContainer(container);
 				if (result == null) result = caseNamedElement(container);
 				if (result == null) result = caseNamespaceAware(container);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case Bw5Package.STRING_TO_STRING_ENTRY: {
-				@SuppressWarnings("unchecked") Map.Entry<String, String> stringToStringEntry = (Map.Entry<String, String>)theEObject;
-				T result = caseStringToStringEntry(stringToStringEntry);
+				if (result == null) result = caseModelElement(container);
+				if (result == null) result = caseStringIdentity(container);
+				if (result == null) result = caseDocumented(container);
+				if (result == null) result = caseMarked(container);
+				if (result == null) result = caseReferrable(container);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -102,6 +100,11 @@ public class Bw5Switch<T> extends Switch<T> {
 				if (result == null) result = caseResource(processDefinition);
 				if (result == null) result = caseNamedElement(processDefinition);
 				if (result == null) result = caseNamespaceAware(processDefinition);
+				if (result == null) result = caseModelElement(processDefinition);
+				if (result == null) result = caseStringIdentity(processDefinition);
+				if (result == null) result = caseDocumented(processDefinition);
+				if (result == null) result = caseMarked(processDefinition);
+				if (result == null) result = caseReferrable(processDefinition);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -109,6 +112,11 @@ public class Bw5Switch<T> extends Switch<T> {
 				Node node = (Node)theEObject;
 				T result = caseNode(node);
 				if (result == null) result = caseNamedElement(node);
+				if (result == null) result = caseModelElement(node);
+				if (result == null) result = caseStringIdentity(node);
+				if (result == null) result = caseDocumented(node);
+				if (result == null) result = caseMarked(node);
+				if (result == null) result = caseReferrable(node);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -116,6 +124,11 @@ public class Bw5Switch<T> extends Switch<T> {
 				TypedElement typedElement = (TypedElement)theEObject;
 				T result = caseTypedElement(typedElement);
 				if (result == null) result = caseNamedElement(typedElement);
+				if (result == null) result = caseModelElement(typedElement);
+				if (result == null) result = caseStringIdentity(typedElement);
+				if (result == null) result = caseDocumented(typedElement);
+				if (result == null) result = caseMarked(typedElement);
+				if (result == null) result = caseReferrable(typedElement);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -125,6 +138,11 @@ public class Bw5Switch<T> extends Switch<T> {
 				if (result == null) result = caseTypedElement(typedNode);
 				if (result == null) result = caseNode(typedNode);
 				if (result == null) result = caseNamedElement(typedNode);
+				if (result == null) result = caseModelElement(typedNode);
+				if (result == null) result = caseStringIdentity(typedNode);
+				if (result == null) result = caseDocumented(typedNode);
+				if (result == null) result = caseMarked(typedNode);
+				if (result == null) result = caseReferrable(typedNode);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -137,6 +155,11 @@ public class Bw5Switch<T> extends Switch<T> {
 				if (result == null) result = caseTypedElement(activity);
 				if (result == null) result = caseNode(activity);
 				if (result == null) result = caseNamedElement(activity);
+				if (result == null) result = caseModelElement(activity);
+				if (result == null) result = caseStringIdentity(activity);
+				if (result == null) result = caseDocumented(activity);
+				if (result == null) result = caseMarked(activity);
+				if (result == null) result = caseReferrable(activity);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -150,6 +173,11 @@ public class Bw5Switch<T> extends Switch<T> {
 				if (result == null) result = caseTypedElement(starter);
 				if (result == null) result = caseNode(starter);
 				if (result == null) result = caseNamedElement(starter);
+				if (result == null) result = caseModelElement(starter);
+				if (result == null) result = caseStringIdentity(starter);
+				if (result == null) result = caseDocumented(starter);
+				if (result == null) result = caseMarked(starter);
+				if (result == null) result = caseReferrable(starter);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -164,6 +192,11 @@ public class Bw5Switch<T> extends Switch<T> {
 				if (result == null) result = caseTypedElement(group);
 				if (result == null) result = caseNode(group);
 				if (result == null) result = caseNamedElement(group);
+				if (result == null) result = caseModelElement(group);
+				if (result == null) result = caseStringIdentity(group);
+				if (result == null) result = caseDocumented(group);
+				if (result == null) result = caseMarked(group);
+				if (result == null) result = caseReferrable(group);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -178,6 +211,11 @@ public class Bw5Switch<T> extends Switch<T> {
 				T result = caseLabel(label);
 				if (result == null) result = caseNode(label);
 				if (result == null) result = caseNamedElement(label);
+				if (result == null) result = caseModelElement(label);
+				if (result == null) result = caseStringIdentity(label);
+				if (result == null) result = caseDocumented(label);
+				if (result == null) result = caseMarked(label);
+				if (result == null) result = caseReferrable(label);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -186,6 +224,11 @@ public class Bw5Switch<T> extends Switch<T> {
 				T result = caseProcessVariable(processVariable);
 				if (result == null) result = caseTypedElement(processVariable);
 				if (result == null) result = caseNamedElement(processVariable);
+				if (result == null) result = caseModelElement(processVariable);
+				if (result == null) result = caseStringIdentity(processVariable);
+				if (result == null) result = caseDocumented(processVariable);
+				if (result == null) result = caseMarked(processVariable);
+				if (result == null) result = caseReferrable(processVariable);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -211,6 +254,11 @@ public class Bw5Switch<T> extends Switch<T> {
 				Resource resource = (Resource)theEObject;
 				T result = caseResource(resource);
 				if (result == null) result = caseNamedElement(resource);
+				if (result == null) result = caseModelElement(resource);
+				if (result == null) result = caseStringIdentity(resource);
+				if (result == null) result = caseDocumented(resource);
+				if (result == null) result = caseMarked(resource);
+				if (result == null) result = caseReferrable(resource);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -219,6 +267,11 @@ public class Bw5Switch<T> extends Switch<T> {
 				T result = caseFolder(folder);
 				if (result == null) result = caseResource(folder);
 				if (result == null) result = caseNamedElement(folder);
+				if (result == null) result = caseModelElement(folder);
+				if (result == null) result = caseStringIdentity(folder);
+				if (result == null) result = caseDocumented(folder);
+				if (result == null) result = caseMarked(folder);
+				if (result == null) result = caseReferrable(folder);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -228,26 +281,16 @@ public class Bw5Switch<T> extends Switch<T> {
 				if (result == null) result = caseFolder(project);
 				if (result == null) result = caseResource(project);
 				if (result == null) result = caseNamedElement(project);
+				if (result == null) result = caseModelElement(project);
+				if (result == null) result = caseStringIdentity(project);
+				if (result == null) result = caseDocumented(project);
+				if (result == null) result = caseMarked(project);
+				if (result == null) result = caseReferrable(project);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			default: return defaultCase(theEObject);
 		}
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Named Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Named Element</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseNamedElement(NamedElement object) {
-		return null;
 	}
 
 	/**
@@ -262,21 +305,6 @@ public class Bw5Switch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseContainer(Container object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>String To String Entry</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>String To String Entry</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseStringToStringEntry(Map.Entry<String, String> object) {
 		return null;
 	}
 
@@ -532,6 +560,96 @@ public class Bw5Switch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseProject(Project object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Referrable</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Referrable</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseReferrable(Referrable object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>String Identity</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>String Identity</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStringIdentity(StringIdentity object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Documented</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Documented</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDocumented(Documented object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Marked</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Marked</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMarked(Marked object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Model Element</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Model Element</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseModelElement(ModelElement object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Named Element</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Named Element</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNamedElement(NamedElement object) {
 		return null;
 	}
 

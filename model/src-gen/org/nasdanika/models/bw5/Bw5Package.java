@@ -7,6 +7,8 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
+import org.nasdanika.models.nxcore.NxcorePackage;
+
 /**
  * <!-- begin-user-doc -->
  * The <b>Package</b> for the model.
@@ -62,52 +64,6 @@ public interface Bw5Package extends EPackage {
 	Bw5Package eINSTANCE = org.nasdanika.models.bw5.impl.Bw5PackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link org.nasdanika.models.bw5.impl.NamedElementImpl <em>Named Element</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.bw5.impl.NamedElementImpl
-	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getNamedElement()
-	 * @generated
-	 */
-	int NAMED_ELEMENT = 0;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NAMED_ELEMENT__NAME = 0;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NAMED_ELEMENT__DESCRIPTION = 1;
-
-	/**
-	 * The number of structural features of the '<em>Named Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NAMED_ELEMENT_FEATURE_COUNT = 2;
-
-	/**
-	 * The number of operations of the '<em>Named Element</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NAMED_ELEMENT_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link org.nasdanika.models.bw5.impl.ContainerImpl <em>Container</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -115,7 +71,88 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getContainer()
 	 * @generated
 	 */
-	int CONTAINER = 1;
+	int CONTAINER = 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__ID = NxcorePackage.NAMED_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__DOCUMENTATION = NxcorePackage.NAMED_ELEMENT__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__DOC_REF = NxcorePackage.NAMED_ELEMENT__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__DOC_FORMAT = NxcorePackage.NAMED_ELEMENT__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__DOC_CONTENTS = NxcorePackage.NAMED_ELEMENT__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__DOC_SECTIONS = NxcorePackage.NAMED_ELEMENT__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__MARKERS = NxcorePackage.NAMED_ELEMENT__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__ICON = NxcorePackage.NAMED_ELEMENT__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__URIS = NxcorePackage.NAMED_ELEMENT__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -124,16 +161,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__NAME = NAMED_ELEMENT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONTAINER__DESCRIPTION = NAMED_ELEMENT__DESCRIPTION;
+	int CONTAINER__NAME = NxcorePackage.NAMED_ELEMENT__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Namespaces</b></em>' map.
@@ -142,7 +170,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__NAMESPACES = NAMED_ELEMENT_FEATURE_COUNT + 0;
+	int CONTAINER__NAMESPACES = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Activities</b></em>' containment reference list.
@@ -151,7 +179,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__ACTIVITIES = NAMED_ELEMENT_FEATURE_COUNT + 1;
+	int CONTAINER__ACTIVITIES = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Groups</b></em>' containment reference list.
@@ -160,7 +188,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__GROUPS = NAMED_ELEMENT_FEATURE_COUNT + 2;
+	int CONTAINER__GROUPS = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Transitions</b></em>' containment reference list.
@@ -169,7 +197,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__TRANSITIONS = NAMED_ELEMENT_FEATURE_COUNT + 3;
+	int CONTAINER__TRANSITIONS = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Start</b></em>' reference.
@@ -178,7 +206,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__START = NAMED_ELEMENT_FEATURE_COUNT + 4;
+	int CONTAINER__START = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>End</b></em>' reference.
@@ -187,7 +215,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__END = NAMED_ELEMENT_FEATURE_COUNT + 5;
+	int CONTAINER__END = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Return Bindings</b></em>' attribute.
@@ -196,7 +224,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__RETURN_BINDINGS = NAMED_ELEMENT_FEATURE_COUNT + 6;
+	int CONTAINER__RETURN_BINDINGS = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Return Bindings Namespaces</b></em>' map.
@@ -205,7 +233,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__RETURN_BINDINGS_NAMESPACES = NAMED_ELEMENT_FEATURE_COUNT + 7;
+	int CONTAINER__RETURN_BINDINGS_NAMESPACES = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Container</em>' class.
@@ -214,7 +242,25 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER_FEATURE_COUNT = NAMED_ELEMENT_FEATURE_COUNT + 8;
+	int CONTAINER_FEATURE_COUNT = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 8;
+
+	/**
+	 * The operation id for the '<em>Collect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER___COLLECT__OBJECT_EREFERENCE_ELIST = NxcorePackage.NAMED_ELEMENT___COLLECT__OBJECT_EREFERENCE_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Referrers</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER___GET_REFERRERS__EREFERENCE = NxcorePackage.NAMED_ELEMENT___GET_REFERRERS__EREFERENCE;
 
 	/**
 	 * The number of operations of the '<em>Container</em>' class.
@@ -223,53 +269,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER_OPERATION_COUNT = NAMED_ELEMENT_OPERATION_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link org.nasdanika.models.bw5.impl.StringToStringEntryImpl <em>String To String Entry</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.nasdanika.models.bw5.impl.StringToStringEntryImpl
-	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getStringToStringEntry()
-	 * @generated
-	 */
-	int STRING_TO_STRING_ENTRY = 2;
-
-	/**
-	 * The feature id for the '<em><b>Key</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TO_STRING_ENTRY__KEY = 0;
-
-	/**
-	 * The feature id for the '<em><b>Value</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TO_STRING_ENTRY__VALUE = 1;
-
-	/**
-	 * The number of structural features of the '<em>String To String Entry</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TO_STRING_ENTRY_FEATURE_COUNT = 2;
-
-	/**
-	 * The number of operations of the '<em>String To String Entry</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TO_STRING_ENTRY_OPERATION_COUNT = 0;
+	int CONTAINER_OPERATION_COUNT = NxcorePackage.NAMED_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.bw5.NamespaceAware <em>Namespace Aware</em>}' class.
@@ -279,7 +279,7 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getNamespaceAware()
 	 * @generated
 	 */
-	int NAMESPACE_AWARE = 3;
+	int NAMESPACE_AWARE = 1;
 
 	/**
 	 * The feature id for the '<em><b>Namespaces</b></em>' map.
@@ -316,7 +316,88 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getProcessDefinition()
 	 * @generated
 	 */
-	int PROCESS_DEFINITION = 4;
+	int PROCESS_DEFINITION = 2;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_DEFINITION__ID = CONTAINER__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_DEFINITION__DOCUMENTATION = CONTAINER__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_DEFINITION__DOC_REF = CONTAINER__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_DEFINITION__DOC_FORMAT = CONTAINER__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_DEFINITION__DOC_CONTENTS = CONTAINER__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_DEFINITION__DOC_SECTIONS = CONTAINER__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_DEFINITION__MARKERS = CONTAINER__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_DEFINITION__ICON = CONTAINER__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_DEFINITION__URIS = CONTAINER__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -326,15 +407,6 @@ public interface Bw5Package extends EPackage {
 	 * @ordered
 	 */
 	int PROCESS_DEFINITION__NAME = CONTAINER__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_DEFINITION__DESCRIPTION = CONTAINER__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Namespaces</b></em>' map.
@@ -517,6 +589,24 @@ public interface Bw5Package extends EPackage {
 	int PROCESS_DEFINITION_FEATURE_COUNT = CONTAINER_FEATURE_COUNT + 11;
 
 	/**
+	 * The operation id for the '<em>Collect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_DEFINITION___COLLECT__OBJECT_EREFERENCE_ELIST = CONTAINER___COLLECT__OBJECT_EREFERENCE_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Referrers</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_DEFINITION___GET_REFERRERS__EREFERENCE = CONTAINER___GET_REFERRERS__EREFERENCE;
+
+	/**
 	 * The number of operations of the '<em>Process Definition</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -533,7 +623,88 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getNode()
 	 * @generated
 	 */
-	int NODE = 5;
+	int NODE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__ID = NxcorePackage.NAMED_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__DOCUMENTATION = NxcorePackage.NAMED_ELEMENT__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__DOC_REF = NxcorePackage.NAMED_ELEMENT__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__DOC_FORMAT = NxcorePackage.NAMED_ELEMENT__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__DOC_CONTENTS = NxcorePackage.NAMED_ELEMENT__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__DOC_SECTIONS = NxcorePackage.NAMED_ELEMENT__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__MARKERS = NxcorePackage.NAMED_ELEMENT__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__ICON = NxcorePackage.NAMED_ELEMENT__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__URIS = NxcorePackage.NAMED_ELEMENT__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -542,16 +713,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__NAME = NAMED_ELEMENT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NODE__DESCRIPTION = NAMED_ELEMENT__DESCRIPTION;
+	int NODE__NAME = NxcorePackage.NAMED_ELEMENT__NAME;
 
 	/**
 	 * The feature id for the '<em><b>X</b></em>' attribute.
@@ -560,7 +722,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__X = NAMED_ELEMENT_FEATURE_COUNT + 0;
+	int NODE__X = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Y</b></em>' attribute.
@@ -569,7 +731,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__Y = NAMED_ELEMENT_FEATURE_COUNT + 1;
+	int NODE__Y = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Outgoing Transitions</b></em>' reference list.
@@ -578,7 +740,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__OUTGOING_TRANSITIONS = NAMED_ELEMENT_FEATURE_COUNT + 2;
+	int NODE__OUTGOING_TRANSITIONS = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Incoming Transitions</b></em>' reference list.
@@ -587,7 +749,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__INCOMING_TRANSITIONS = NAMED_ELEMENT_FEATURE_COUNT + 3;
+	int NODE__INCOMING_TRANSITIONS = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Node</em>' class.
@@ -596,7 +758,25 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE_FEATURE_COUNT = NAMED_ELEMENT_FEATURE_COUNT + 4;
+	int NODE_FEATURE_COUNT = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Collect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE___COLLECT__OBJECT_EREFERENCE_ELIST = NxcorePackage.NAMED_ELEMENT___COLLECT__OBJECT_EREFERENCE_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Referrers</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE___GET_REFERRERS__EREFERENCE = NxcorePackage.NAMED_ELEMENT___GET_REFERRERS__EREFERENCE;
 
 	/**
 	 * The number of operations of the '<em>Node</em>' class.
@@ -605,7 +785,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE_OPERATION_COUNT = NAMED_ELEMENT_OPERATION_COUNT + 0;
+	int NODE_OPERATION_COUNT = NxcorePackage.NAMED_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.bw5.impl.TypedElementImpl <em>Typed Element</em>}' class.
@@ -615,7 +795,88 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getTypedElement()
 	 * @generated
 	 */
-	int TYPED_ELEMENT = 6;
+	int TYPED_ELEMENT = 4;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_ELEMENT__ID = NxcorePackage.NAMED_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_ELEMENT__DOCUMENTATION = NxcorePackage.NAMED_ELEMENT__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_ELEMENT__DOC_REF = NxcorePackage.NAMED_ELEMENT__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_ELEMENT__DOC_FORMAT = NxcorePackage.NAMED_ELEMENT__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_ELEMENT__DOC_CONTENTS = NxcorePackage.NAMED_ELEMENT__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_ELEMENT__DOC_SECTIONS = NxcorePackage.NAMED_ELEMENT__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_ELEMENT__MARKERS = NxcorePackage.NAMED_ELEMENT__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_ELEMENT__ICON = NxcorePackage.NAMED_ELEMENT__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_ELEMENT__URIS = NxcorePackage.NAMED_ELEMENT__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -624,16 +885,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TYPED_ELEMENT__NAME = NAMED_ELEMENT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TYPED_ELEMENT__DESCRIPTION = NAMED_ELEMENT__DESCRIPTION;
+	int TYPED_ELEMENT__NAME = NxcorePackage.NAMED_ELEMENT__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -642,7 +894,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TYPED_ELEMENT__TYPE = NAMED_ELEMENT_FEATURE_COUNT + 0;
+	int TYPED_ELEMENT__TYPE = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Typed Element</em>' class.
@@ -651,7 +903,25 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TYPED_ELEMENT_FEATURE_COUNT = NAMED_ELEMENT_FEATURE_COUNT + 1;
+	int TYPED_ELEMENT_FEATURE_COUNT = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Collect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_ELEMENT___COLLECT__OBJECT_EREFERENCE_ELIST = NxcorePackage.NAMED_ELEMENT___COLLECT__OBJECT_EREFERENCE_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Referrers</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_ELEMENT___GET_REFERRERS__EREFERENCE = NxcorePackage.NAMED_ELEMENT___GET_REFERRERS__EREFERENCE;
 
 	/**
 	 * The number of operations of the '<em>Typed Element</em>' class.
@@ -660,7 +930,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TYPED_ELEMENT_OPERATION_COUNT = NAMED_ELEMENT_OPERATION_COUNT + 0;
+	int TYPED_ELEMENT_OPERATION_COUNT = NxcorePackage.NAMED_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.bw5.impl.TypedNodeImpl <em>Typed Node</em>}' class.
@@ -670,7 +940,88 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getTypedNode()
 	 * @generated
 	 */
-	int TYPED_NODE = 7;
+	int TYPED_NODE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_NODE__ID = TYPED_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_NODE__DOCUMENTATION = TYPED_ELEMENT__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_NODE__DOC_REF = TYPED_ELEMENT__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_NODE__DOC_FORMAT = TYPED_ELEMENT__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_NODE__DOC_CONTENTS = TYPED_ELEMENT__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_NODE__DOC_SECTIONS = TYPED_ELEMENT__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_NODE__MARKERS = TYPED_ELEMENT__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_NODE__ICON = TYPED_ELEMENT__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_NODE__URIS = TYPED_ELEMENT__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -680,15 +1031,6 @@ public interface Bw5Package extends EPackage {
 	 * @ordered
 	 */
 	int TYPED_NODE__NAME = TYPED_ELEMENT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TYPED_NODE__DESCRIPTION = TYPED_ELEMENT__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -754,6 +1096,24 @@ public interface Bw5Package extends EPackage {
 	int TYPED_NODE_FEATURE_COUNT = TYPED_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
+	 * The operation id for the '<em>Collect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_NODE___COLLECT__OBJECT_EREFERENCE_ELIST = TYPED_ELEMENT___COLLECT__OBJECT_EREFERENCE_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Referrers</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TYPED_NODE___GET_REFERRERS__EREFERENCE = TYPED_ELEMENT___GET_REFERRERS__EREFERENCE;
+
+	/**
 	 * The number of operations of the '<em>Typed Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -770,7 +1130,88 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getActivity()
 	 * @generated
 	 */
-	int ACTIVITY = 8;
+	int ACTIVITY = 6;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__ID = TYPED_NODE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__DOCUMENTATION = TYPED_NODE__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__DOC_REF = TYPED_NODE__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__DOC_FORMAT = TYPED_NODE__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__DOC_CONTENTS = TYPED_NODE__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__DOC_SECTIONS = TYPED_NODE__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__MARKERS = TYPED_NODE__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__ICON = TYPED_NODE__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__URIS = TYPED_NODE__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -780,15 +1221,6 @@ public interface Bw5Package extends EPackage {
 	 * @ordered
 	 */
 	int ACTIVITY__NAME = TYPED_NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACTIVITY__DESCRIPTION = TYPED_NODE__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -899,6 +1331,24 @@ public interface Bw5Package extends EPackage {
 	int ACTIVITY_FEATURE_COUNT = TYPED_NODE_FEATURE_COUNT + 5;
 
 	/**
+	 * The operation id for the '<em>Collect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY___COLLECT__OBJECT_EREFERENCE_ELIST = TYPED_NODE___COLLECT__OBJECT_EREFERENCE_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Referrers</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY___GET_REFERRERS__EREFERENCE = TYPED_NODE___GET_REFERRERS__EREFERENCE;
+
+	/**
 	 * The number of operations of the '<em>Activity</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -915,7 +1365,88 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getStarter()
 	 * @generated
 	 */
-	int STARTER = 9;
+	int STARTER = 7;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STARTER__ID = ACTIVITY__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STARTER__DOCUMENTATION = ACTIVITY__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STARTER__DOC_REF = ACTIVITY__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STARTER__DOC_FORMAT = ACTIVITY__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STARTER__DOC_CONTENTS = ACTIVITY__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STARTER__DOC_SECTIONS = ACTIVITY__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STARTER__MARKERS = ACTIVITY__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STARTER__ICON = ACTIVITY__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STARTER__URIS = ACTIVITY__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -925,15 +1456,6 @@ public interface Bw5Package extends EPackage {
 	 * @ordered
 	 */
 	int STARTER__NAME = ACTIVITY__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STARTER__DESCRIPTION = ACTIVITY__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -1044,6 +1566,24 @@ public interface Bw5Package extends EPackage {
 	int STARTER_FEATURE_COUNT = ACTIVITY_FEATURE_COUNT + 0;
 
 	/**
+	 * The operation id for the '<em>Collect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STARTER___COLLECT__OBJECT_EREFERENCE_ELIST = ACTIVITY___COLLECT__OBJECT_EREFERENCE_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Referrers</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STARTER___GET_REFERRERS__EREFERENCE = ACTIVITY___GET_REFERRERS__EREFERENCE;
+
+	/**
 	 * The number of operations of the '<em>Starter</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1060,7 +1600,88 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getGroup()
 	 * @generated
 	 */
-	int GROUP = 10;
+	int GROUP = 8;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__ID = ACTIVITY__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__DOCUMENTATION = ACTIVITY__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__DOC_REF = ACTIVITY__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__DOC_FORMAT = ACTIVITY__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__DOC_CONTENTS = ACTIVITY__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__DOC_SECTIONS = ACTIVITY__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__MARKERS = ACTIVITY__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__ICON = ACTIVITY__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__URIS = ACTIVITY__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1070,15 +1691,6 @@ public interface Bw5Package extends EPackage {
 	 * @ordered
 	 */
 	int GROUP__NAME = ACTIVITY__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GROUP__DESCRIPTION = ACTIVITY__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -1297,6 +1909,24 @@ public interface Bw5Package extends EPackage {
 	int GROUP_FEATURE_COUNT = ACTIVITY_FEATURE_COUNT + 12;
 
 	/**
+	 * The operation id for the '<em>Collect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP___COLLECT__OBJECT_EREFERENCE_ELIST = ACTIVITY___COLLECT__OBJECT_EREFERENCE_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Referrers</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP___GET_REFERRERS__EREFERENCE = ACTIVITY___GET_REFERRERS__EREFERENCE;
+
+	/**
 	 * The number of operations of the '<em>Group</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1313,7 +1943,7 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getTransition()
 	 * @generated
 	 */
-	int TRANSITION = 11;
+	int TRANSITION = 9;
 
 	/**
 	 * The feature id for the '<em><b>From</b></em>' attribute.
@@ -1413,7 +2043,88 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getLabel()
 	 * @generated
 	 */
-	int LABEL = 12;
+	int LABEL = 10;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__ID = NODE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__DOCUMENTATION = NODE__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__DOC_REF = NODE__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__DOC_FORMAT = NODE__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__DOC_CONTENTS = NODE__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__DOC_SECTIONS = NODE__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__MARKERS = NODE__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__ICON = NODE__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__URIS = NODE__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1423,15 +2134,6 @@ public interface Bw5Package extends EPackage {
 	 * @ordered
 	 */
 	int LABEL__NAME = NODE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL__DESCRIPTION = NODE__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>X</b></em>' attribute.
@@ -1542,6 +2244,24 @@ public interface Bw5Package extends EPackage {
 	int LABEL_FEATURE_COUNT = NODE_FEATURE_COUNT + 7;
 
 	/**
+	 * The operation id for the '<em>Collect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL___COLLECT__OBJECT_EREFERENCE_ELIST = NODE___COLLECT__OBJECT_EREFERENCE_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Referrers</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL___GET_REFERRERS__EREFERENCE = NODE___GET_REFERRERS__EREFERENCE;
+
+	/**
 	 * The number of operations of the '<em>Label</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1558,7 +2278,88 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getProcessVariable()
 	 * @generated
 	 */
-	int PROCESS_VARIABLE = 13;
+	int PROCESS_VARIABLE = 11;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_VARIABLE__ID = TYPED_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_VARIABLE__DOCUMENTATION = TYPED_ELEMENT__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_VARIABLE__DOC_REF = TYPED_ELEMENT__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_VARIABLE__DOC_FORMAT = TYPED_ELEMENT__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_VARIABLE__DOC_CONTENTS = TYPED_ELEMENT__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_VARIABLE__DOC_SECTIONS = TYPED_ELEMENT__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_VARIABLE__MARKERS = TYPED_ELEMENT__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_VARIABLE__ICON = TYPED_ELEMENT__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_VARIABLE__URIS = TYPED_ELEMENT__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1568,15 +2369,6 @@ public interface Bw5Package extends EPackage {
 	 * @ordered
 	 */
 	int PROCESS_VARIABLE__NAME = TYPED_ELEMENT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESS_VARIABLE__DESCRIPTION = TYPED_ELEMENT__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -1597,6 +2389,24 @@ public interface Bw5Package extends EPackage {
 	int PROCESS_VARIABLE_FEATURE_COUNT = TYPED_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
+	 * The operation id for the '<em>Collect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_VARIABLE___COLLECT__OBJECT_EREFERENCE_ELIST = TYPED_ELEMENT___COLLECT__OBJECT_EREFERENCE_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Referrers</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESS_VARIABLE___GET_REFERRERS__EREFERENCE = TYPED_ELEMENT___GET_REFERRERS__EREFERENCE;
+
+	/**
 	 * The number of operations of the '<em>Process Variable</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1613,7 +2423,7 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getCall()
 	 * @generated
 	 */
-	int CALL = 14;
+	int CALL = 12;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1668,7 +2478,7 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getCallTarget()
 	 * @generated
 	 */
-	int CALL_TARGET = 15;
+	int CALL_TARGET = 13;
 
 	/**
 	 * The feature id for the '<em><b>Incoming Calls</b></em>' reference list.
@@ -1705,7 +2515,7 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getCaller()
 	 * @generated
 	 */
-	int CALLER = 16;
+	int CALLER = 14;
 
 	/**
 	 * The feature id for the '<em><b>Outgoing Calls</b></em>' containment reference list.
@@ -1742,7 +2552,88 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getResource()
 	 * @generated
 	 */
-	int RESOURCE = 17;
+	int RESOURCE = 15;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE__ID = NxcorePackage.NAMED_ELEMENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE__DOCUMENTATION = NxcorePackage.NAMED_ELEMENT__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE__DOC_REF = NxcorePackage.NAMED_ELEMENT__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE__DOC_FORMAT = NxcorePackage.NAMED_ELEMENT__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE__DOC_CONTENTS = NxcorePackage.NAMED_ELEMENT__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE__DOC_SECTIONS = NxcorePackage.NAMED_ELEMENT__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE__MARKERS = NxcorePackage.NAMED_ELEMENT__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE__ICON = NxcorePackage.NAMED_ELEMENT__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE__URIS = NxcorePackage.NAMED_ELEMENT__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1751,16 +2642,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESOURCE__NAME = NAMED_ELEMENT__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESOURCE__DESCRIPTION = NAMED_ELEMENT__DESCRIPTION;
+	int RESOURCE__NAME = NxcorePackage.NAMED_ELEMENT__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Project Path</b></em>' attribute.
@@ -1769,7 +2651,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESOURCE__PROJECT_PATH = NAMED_ELEMENT_FEATURE_COUNT + 0;
+	int RESOURCE__PROJECT_PATH = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Parent</b></em>' reference.
@@ -1778,7 +2660,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESOURCE__PARENT = NAMED_ELEMENT_FEATURE_COUNT + 1;
+	int RESOURCE__PARENT = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>File Name</b></em>' attribute.
@@ -1787,7 +2669,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESOURCE__FILE_NAME = NAMED_ELEMENT_FEATURE_COUNT + 2;
+	int RESOURCE__FILE_NAME = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Resource</em>' class.
@@ -1796,7 +2678,25 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESOURCE_FEATURE_COUNT = NAMED_ELEMENT_FEATURE_COUNT + 3;
+	int RESOURCE_FEATURE_COUNT = NxcorePackage.NAMED_ELEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Collect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE___COLLECT__OBJECT_EREFERENCE_ELIST = NxcorePackage.NAMED_ELEMENT___COLLECT__OBJECT_EREFERENCE_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Referrers</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE___GET_REFERRERS__EREFERENCE = NxcorePackage.NAMED_ELEMENT___GET_REFERRERS__EREFERENCE;
 
 	/**
 	 * The number of operations of the '<em>Resource</em>' class.
@@ -1805,7 +2705,7 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESOURCE_OPERATION_COUNT = NAMED_ELEMENT_OPERATION_COUNT + 0;
+	int RESOURCE_OPERATION_COUNT = NxcorePackage.NAMED_ELEMENT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.nasdanika.models.bw5.impl.FolderImpl <em>Folder</em>}' class.
@@ -1815,7 +2715,88 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getFolder()
 	 * @generated
 	 */
-	int FOLDER = 18;
+	int FOLDER = 16;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FOLDER__ID = RESOURCE__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FOLDER__DOCUMENTATION = RESOURCE__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FOLDER__DOC_REF = RESOURCE__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FOLDER__DOC_FORMAT = RESOURCE__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FOLDER__DOC_CONTENTS = RESOURCE__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FOLDER__DOC_SECTIONS = RESOURCE__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FOLDER__MARKERS = RESOURCE__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FOLDER__ICON = RESOURCE__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FOLDER__URIS = RESOURCE__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1825,15 +2806,6 @@ public interface Bw5Package extends EPackage {
 	 * @ordered
 	 */
 	int FOLDER__NAME = RESOURCE__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FOLDER__DESCRIPTION = RESOURCE__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Project Path</b></em>' attribute.
@@ -1890,6 +2862,24 @@ public interface Bw5Package extends EPackage {
 	int FOLDER_FEATURE_COUNT = RESOURCE_FEATURE_COUNT + 2;
 
 	/**
+	 * The operation id for the '<em>Collect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FOLDER___COLLECT__OBJECT_EREFERENCE_ELIST = RESOURCE___COLLECT__OBJECT_EREFERENCE_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Referrers</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FOLDER___GET_REFERRERS__EREFERENCE = RESOURCE___GET_REFERRERS__EREFERENCE;
+
+	/**
 	 * The number of operations of the '<em>Folder</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1906,7 +2896,88 @@ public interface Bw5Package extends EPackage {
 	 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getProject()
 	 * @generated
 	 */
-	int PROJECT = 19;
+	int PROJECT = 17;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__ID = FOLDER__ID;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__DOCUMENTATION = FOLDER__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Doc Ref</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__DOC_REF = FOLDER__DOC_REF;
+
+	/**
+	 * The feature id for the '<em><b>Doc Format</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__DOC_FORMAT = FOLDER__DOC_FORMAT;
+
+	/**
+	 * The feature id for the '<em><b>Doc Contents</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__DOC_CONTENTS = FOLDER__DOC_CONTENTS;
+
+	/**
+	 * The feature id for the '<em><b>Doc Sections</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__DOC_SECTIONS = FOLDER__DOC_SECTIONS;
+
+	/**
+	 * The feature id for the '<em><b>Markers</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__MARKERS = FOLDER__MARKERS;
+
+	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__ICON = FOLDER__ICON;
+
+	/**
+	 * The feature id for the '<em><b>Uris</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT__URIS = FOLDER__URIS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1916,15 +2987,6 @@ public interface Bw5Package extends EPackage {
 	 * @ordered
 	 */
 	int PROJECT__NAME = FOLDER__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Description</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROJECT__DESCRIPTION = FOLDER__DESCRIPTION;
 
 	/**
 	 * The feature id for the '<em><b>Project Path</b></em>' attribute.
@@ -1981,6 +3043,24 @@ public interface Bw5Package extends EPackage {
 	int PROJECT_FEATURE_COUNT = FOLDER_FEATURE_COUNT + 0;
 
 	/**
+	 * The operation id for the '<em>Collect</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT___COLLECT__OBJECT_EREFERENCE_ELIST = FOLDER___COLLECT__OBJECT_EREFERENCE_ELIST;
+
+	/**
+	 * The operation id for the '<em>Get Referrers</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROJECT___GET_REFERRERS__EREFERENCE = FOLDER___GET_REFERRERS__EREFERENCE;
+
+	/**
 	 * The number of operations of the '<em>Project</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1989,38 +3069,6 @@ public interface Bw5Package extends EPackage {
 	 */
 	int PROJECT_OPERATION_COUNT = FOLDER_OPERATION_COUNT + 0;
 
-
-	/**
-	 * Returns the meta object for class '{@link org.nasdanika.models.bw5.NamedElement <em>Named Element</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Named Element</em>'.
-	 * @see org.nasdanika.models.bw5.NamedElement
-	 * @generated
-	 */
-	EClass getNamedElement();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.nasdanika.models.bw5.NamedElement#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see org.nasdanika.models.bw5.NamedElement#getName()
-	 * @see #getNamedElement()
-	 * @generated
-	 */
-	EAttribute getNamedElement_Name();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.nasdanika.models.bw5.NamedElement#getDescription <em>Description</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Description</em>'.
-	 * @see org.nasdanika.models.bw5.NamedElement#getDescription()
-	 * @see #getNamedElement()
-	 * @generated
-	 */
-	EAttribute getNamedElement_Description();
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.bw5.Container <em>Container</em>}'.
@@ -2108,40 +3156,6 @@ public interface Bw5Package extends EPackage {
 	 * @generated
 	 */
 	EReference getContainer_ReturnBindingsNamespaces();
-
-	/**
-	 * Returns the meta object for class '{@link java.util.Map.Entry <em>String To String Entry</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>String To String Entry</em>'.
-	 * @see java.util.Map.Entry
-	 * @model keyUnique="false" keyDataType="org.eclipse.emf.ecore.EString"
-	 *        valueUnique="false" valueDataType="org.eclipse.emf.ecore.EString"
-	 * @generated
-	 */
-	EClass getStringToStringEntry();
-
-	/**
-	 * Returns the meta object for the attribute '{@link java.util.Map.Entry <em>Key</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Key</em>'.
-	 * @see java.util.Map.Entry
-	 * @see #getStringToStringEntry()
-	 * @generated
-	 */
-	EAttribute getStringToStringEntry_Key();
-
-	/**
-	 * Returns the meta object for the attribute '{@link java.util.Map.Entry <em>Value</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Value</em>'.
-	 * @see java.util.Map.Entry
-	 * @see #getStringToStringEntry()
-	 * @generated
-	 */
-	EAttribute getStringToStringEntry_Value();
 
 	/**
 	 * Returns the meta object for class '{@link org.nasdanika.models.bw5.NamespaceAware <em>Namespace Aware</em>}'.
@@ -2854,32 +3868,6 @@ public interface Bw5Package extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link org.nasdanika.models.bw5.impl.NamedElementImpl <em>Named Element</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.nasdanika.models.bw5.impl.NamedElementImpl
-		 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getNamedElement()
-		 * @generated
-		 */
-		EClass NAMED_ELEMENT = eINSTANCE.getNamedElement();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute NAMED_ELEMENT__NAME = eINSTANCE.getNamedElement_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute NAMED_ELEMENT__DESCRIPTION = eINSTANCE.getNamedElement_Description();
-
-		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.bw5.impl.ContainerImpl <em>Container</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2944,32 +3932,6 @@ public interface Bw5Package extends EPackage {
 		 * @generated
 		 */
 		EReference CONTAINER__RETURN_BINDINGS_NAMESPACES = eINSTANCE.getContainer_ReturnBindingsNamespaces();
-
-		/**
-		 * The meta object literal for the '{@link org.nasdanika.models.bw5.impl.StringToStringEntryImpl <em>String To String Entry</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.nasdanika.models.bw5.impl.StringToStringEntryImpl
-		 * @see org.nasdanika.models.bw5.impl.Bw5PackageImpl#getStringToStringEntry()
-		 * @generated
-		 */
-		EClass STRING_TO_STRING_ENTRY = eINSTANCE.getStringToStringEntry();
-
-		/**
-		 * The meta object literal for the '<em><b>Key</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute STRING_TO_STRING_ENTRY__KEY = eINSTANCE.getStringToStringEntry_Key();
-
-		/**
-		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute STRING_TO_STRING_ENTRY__VALUE = eINSTANCE.getStringToStringEntry_Value();
 
 		/**
 		 * The meta object literal for the '{@link org.nasdanika.models.bw5.NamespaceAware <em>Namespace Aware</em>}' class.

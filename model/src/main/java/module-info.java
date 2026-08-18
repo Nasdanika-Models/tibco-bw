@@ -12,6 +12,7 @@ module org.nasdanika.models.bw5 {
 	
 	requires transitive org.eclipse.emf.ecore;
 	requires transitive org.eclipse.emf.common;
+	requires transitive org.nasdanika.models.threat;
 	requires transitive org.nasdanika.graph;
 	requires transitive java.xml;
 	

@@ -2,6 +2,7 @@
  */
 package org.nasdanika.models.bw5;
 
+import org.nasdanika.models.nxcore.NamedElement;
 
 /**
  * <!-- begin-user-doc -->
